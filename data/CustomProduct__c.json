@@ -1,0 +1,34 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "CustomProduct__c",
+                "referenceId": "CustomProduct1"
+            },
+            "Name": "샘플 야옹 1",
+            "ShortDesc__c": "야옹이 궁둥입니다.",
+            "ImageUrl__c": "$Resource.catalogSampleImages/sample1.jpg",
+            "ProductType__c": "Type1"
+        },
+        {
+            "attributes": {
+                "type": "CustomProduct__c",
+                "referenceId": "CustomProduct2"
+            },
+            "Name": "샘플 야옹 2",
+            "ShortDesc__c": "여우 야옹입니다.",
+            "ImageUrl__c": "$Resource.catalogSampleImages/sample2.jpg",
+            "ProductType__c": "Type2"
+        },
+        {
+            "attributes": {
+                "type": "CustomProduct__c",
+                "referenceId": "CustomProduct3"
+            },
+            "Name": "샘플 야옹 3",
+            "ShortDesc__c": "야옹이 시바견모드입니다.",
+            "ImageUrl__c": "$Resource.catalogSampleImages/sample3.jpg",
+            "ProductType__c": "Type3"
+        }
+    ]
+}

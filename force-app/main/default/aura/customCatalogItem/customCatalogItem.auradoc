@@ -1,0 +1,10 @@
+<!--
+ * @description: Documentation for custom catalog item component
+ * @author: By Jayyum with Claude Sonnet
+-->
+<aura:documentation>
+    <aura:description>Documentation</aura:description>
+    <aura:example name="ExampleName" ref="c:customCatalogItem" label="Label">
+        Example Description
+    </aura:example>
+</aura:documentation>

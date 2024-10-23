@@ -1,0 +1,15 @@
+{
+  "packageDirectories": [
+      {
+          "path": "force-app",
+          "default": true,
+          "package": "CustomCatalogDisplay",
+          "versionName": "Version 1.0",
+          "versionNumber": "1.0.0.NEXT"
+      }
+  ],
+  "name": "custom-catalog-display",
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "61.0"
+}

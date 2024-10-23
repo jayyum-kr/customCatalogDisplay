@@ -1,0 +1,10 @@
+<!--
+ * @description: Documentation for custom catalog container component
+ * @author: By Jayyum with Claude Sonnet
+-->
+<aura:documentation>
+    <aura:description>Custom Catalog Container Component</aura:description>
+    <aura:example name="CustomCatalogContainer" ref="c:customCatalogContainer" label="CustomCatalogContainer">
+        This component displays a catalog of items in a 3x2 grid format.
+    </aura:example>
+</aura:documentation>

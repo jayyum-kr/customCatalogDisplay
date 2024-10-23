@@ -1,0 +1,41 @@
+<!--
+ * @description: Design parameters for custom catalog container component
+ * @author: By Jayyum with Claude Sonnet
+-->
+<design:component label="Custom Catalog Container">
+    <design:attribute name="cardTitle" label="Card Title" description="Title for the catalog card" />
+    <design:attribute name="cardIcon" label="Card Icon" description="Icon name for the catalog card" />
+    <design:attribute name="selectedProductType" label="Product Type" description="Select the product type to display" 
+                     datasource="apex://CustomCatalogProdTypePicklist"/>
+    
+    <!-- Static item attributes -->
+    <design:attribute name="item1Name" label="Item 1 Name"/>
+    <design:attribute name="item1Desc" label="Item 1 Description"/>
+    <design:attribute name="item1Image" label="Item 1 Image URL"/>
+    <design:attribute name="item1Url" label="Item 1 Record URL"/>
+    
+    <design:attribute name="item2Name" label="Item 2 Name"/>
+    <design:attribute name="item2Desc" label="Item 2 Description"/>
+    <design:attribute name="item2Image" label="Item 2 Image URL"/>
+    <design:attribute name="item2Url" label="Item 2 Record URL"/>
+    
+    <design:attribute name="item3Name" label="Item 3 Name"/>
+    <design:attribute name="item3Desc" label="Item 3 Description"/>
+    <design:attribute name="item3Image" label="Item 3 Image URL"/>
+    <design:attribute name="item3Url" label="Item 3 Record URL"/>
+    
+    <design:attribute name="item4Name" label="Item 4 Name"/>
+    <design:attribute name="item4Desc" label="Item 4 Description"/>
+    <design:attribute name="item4Image" label="Item 4 Image URL"/>
+    <design:attribute name="item4Url" label="Item 4 Record URL"/>
+    
+    <design:attribute name="item5Name" label="Item 5 Name"/>
+    <design:attribute name="item5Desc" label="Item 5 Description"/>
+    <design:attribute name="item5Image" label="Item 5 Image URL"/>
+    <design:attribute name="item5Url" label="Item 5 Record URL"/>
+    
+    <design:attribute name="item6Name" label="Item 6 Name"/>
+    <design:attribute name="item6Desc" label="Item 6 Description"/>
+    <design:attribute name="item6Image" label="Item 6 Image URL"/>
+    <design:attribute name="item6Url" label="Item 6 Record URL"/>
+</design:component>

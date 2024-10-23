@@ -1,0 +1,53 @@
+<!--
+ * @description: Container component for custom catalog display
+ * @author: By Jayyum with Claude Sonnet
+-->
+<aura:component controller="CustomCatalogContainerController" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global">
+    
+    <aura:attribute name="products" type="CustomProduct__c[]"/>
+    <aura:attribute name="selectedProductType" type="String" />
+    <aura:attribute name="cardTitle" type="String" default="상품 카탈로그"/>
+    <aura:attribute name="cardIcon" type="String" default="standard:catalog"/>
+    
+    <!-- Keep the old attributes -->
+    <aura:attribute name="item1Name" type="String"/>
+    <aura:attribute name="item1Desc" type="String"/>
+    <aura:attribute name="item1Image" type="String"/>
+    <aura:attribute name="item1Url" type="String"/>
+    
+    <aura:attribute name="item2Name" type="String"/>
+    <aura:attribute name="item2Desc" type="String"/>
+    <aura:attribute name="item2Image" type="String"/>
+    <aura:attribute name="item2Url" type="String"/>
+    
+    <aura:attribute name="item3Name" type="String"/>
+    <aura:attribute name="item3Desc" type="String"/>
+    <aura:attribute name="item3Image" type="String"/>
+    <aura:attribute name="item3Url" type="String"/>
+    
+    <aura:attribute name="item4Name" type="String"/>
+    <aura:attribute name="item4Desc" type="String"/>
+    <aura:attribute name="item4Image" type="String"/>
+    <aura:attribute name="item4Url" type="String"/>
+    
+    <aura:attribute name="item5Name" type="String"/>
+    <aura:attribute name="item5Desc" type="String"/>
+    <aura:attribute name="item5Image" type="String"/>
+    <aura:attribute name="item5Url" type="String"/>
+    
+    <aura:attribute name="item6Name" type="String"/>
+    <aura:attribute name="item6Desc" type="String"/>
+    <aura:attribute name="item6Image" type="String"/>
+    <aura:attribute name="item6Url" type="String"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="change" value="{!v.selectedProductType}" action="{!c.handleProductTypeChange}"/>
+    
+    <lightning:card title="{!v.cardTitle}" iconName="{!v.cardIcon}">
+        <div class="slds-grid slds-gutters slds-wrap">
+            <aura:iteration items="{!v.products}" var="product">
+                <c:customCatalogItem product="{!product}"/>
+            </aura:iteration>
+        </div>
+    </lightning:card>
+</aura:component>

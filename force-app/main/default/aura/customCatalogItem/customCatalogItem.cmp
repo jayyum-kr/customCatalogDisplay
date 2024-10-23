@@ -1,0 +1,16 @@
+<!--
+ * @description: Custom catalog item component for displaying individual product
+ * @author: By Jayyum with Claude Sonnet
+-->
+<aura:component>
+    <aura:attribute name="product" type="CustomProduct__c"/>
+    
+    <div class="slds-col slds-size_1-of-3 slds-p-around_small">
+        <div class="slds-box slds-box_x-small slds-text-align_center">
+            <img src="{!v.product.imageUrl__c}" alt="{!v.product.Name}" class="slds-m-bottom_x-small" style="max-width: 100%; height: auto;"/>
+            <div class="slds-text-heading_small slds-m-bottom_xx-small">{!v.product.Name}</div>
+            <div class="slds-m-bottom_small">{!v.product.shortdesc__c}</div>
+            <lightning:button label="View Details" onclick="{!c.navigateToRecord}" name="{!v.product.Id}"/>
+        </div>
+    </div>
+</aura:component>
